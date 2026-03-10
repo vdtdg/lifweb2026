@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.svg" />
+    <script type="module" src="javascripts/app.js"></script>
+    <title>LIFWEB Shortener</title>
+  </head>
+  <body>
+    <header>
+      <h1>The <span>LIFWEB</span> Shortener</h1>
+      <p id="app-subtitle"></p>
+    </header>
+    <main>
+      <section>
+        <form method="post" action="#" id="create-link">
+          <label for="url">Type the URL to shorten</label>
+          <input name="uri" type="url" placeholder="https://perdu.com" />
+          <button>Create</button>
+        </form>
+      </section>
+      <section id="generated-link"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

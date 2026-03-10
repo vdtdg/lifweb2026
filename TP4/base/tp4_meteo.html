@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie Pokémon</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="stylesheet" href="tp4_meteo.css" />
+    <script defer src="meteo-data.js"></script>
+    <script defer src="tp4_meteo.js"></script>
+  </head>
+  <body>
+    <h1>TP4 Météo</h1>
+
+    <h2>1. Météo à Olso</h2>
+    <div id="meteo-oslo" class="meteo">
+      <h3>
+        <span class="ville">Oslo</span> <span class="coord">lat:59.8939243, lon:10.6203135</span>
+      </h3>
+      <span class="temperature"></span>
+      <object class="meteo-icon" type="image/svg+xml"></object>
+    </div>
+
+    <h2>2. Météo à Lyon</h2>
+    <div id="meteo-lyon" class="meteo"></div>
+
+    <h2>3. Tableau de bord Météo</h2>
+    <div id="meteo-dashboard"></div>
+
+    <template id="meteo-card-template"> </template>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 10px;
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  color: #444;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+h3 {
+  line-height: 1;
+  margin: 0.5em 0em;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #c9d1d9;
+    background: #0d1117;
+  }
+  a:link {
+    color: #58a6ff;
+  }
+  a:visited {
+    color: #8e96f0;
+  }
+}
+
+/* ================ */
+
+/* === Partie 2: Ajoutez votre CSS ici === */
+/* TODO: Utilisez flexbox pour centrer le titre du deck */
+.deck-title-container {
+  .deck-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    margin: 20px 0;
+  }
+
+  .deck-selector {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+}
+
+/* Styles pour la galerie version CSS */
+#pokemon-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  height: 400px;
+  overflow: clip;
+}
+
+.pokemon-card {
+  flex: 0 1 25%; /* Le premier 0 le growing et 2e valide le shrinking en fonction de la largeur du parent */
+  /* transition: transform 1s ease; /* Smooth transition for hover */
+  border: 1px solid #ccc;
+  height: 300px;
+  padding: 5px;
+}
+
+.pokemon-card img {
+  width: 100%; /* Force à ce que l'image "rentre" dans la card et soit bien retaillée*/
+}
+
+/* Hover effect */
+.pokemon-card:hover {
+  transform: scale(1.15); /* Un effet d'agrandissement au passage de la souris */
+  z-index: 1; /* Avance le plan d'affichage de la carte */
+}
+
+/* Adjust selected card style */
+.pokemon-card.selected {
+  /* display: inline-block; */
+  border: 2px solid blue;
+  transform: scale(1.15); /* on agrandit la carte centrale */
+  z-index: 2; /* S'assure que la carte centrale est au dessus de toutes les autres */
+}
+
+.pokemon-card.selected ~ .pokemon-card {
+  visibility: collapse;
+}
+/* .pokemon-card:has(:nth-child(-n + 2)) {
+    visibility: collapse;
+  } */
+
+.pokemon-card.selected + .pokemon-card {
+  visibility: visible;
+  transform: translate(2em) rotate(10deg);
+}
+
+.pokemon-card:has(~ * + .pokemon-card.selected) {
+  visibility: collapse;
+}
+
+.pokemon-card:has(+ .pokemon-card.selected) {
+  visibility: visible;
+  transform: translate(-2em) rotate(-10deg);
+}
+
+/*** 
+    Styles pour la galerie version JS 
+    ***/
+#jsgallery-container {
+  background: #dcdcdc;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  overflow: clip;
+}
+
+.jscard-item {
+  flex: 0 0 30%; /*grow | shrink | basis */
+  height: 330px;
+  padding: 2px;
+  background-color: #fff4e6;
+  border: 1px solid #ffccaa;
+}
+
+.jscard-item img {
+  width: 100%;
+}

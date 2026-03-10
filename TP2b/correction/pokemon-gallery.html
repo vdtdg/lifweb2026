@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie Pokémon</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="stylesheet" href="pokemon-gallery2.css" />
+    <script defer src="pokemon-data.js"></script>
+    <script defer src="pokemon-gallery-solutions2.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Sélection du deck -->
+      <div class="deck-selector">
+        <label for="deck-choice">Choisissez votre deck :</label>
+        <select id="deck-choice">
+          <option value="">--Sélectionnez un deck--</option>
+          <option value="starter">Deck Starters</option>
+          <option value="legendaire">Deck Légendaires</option>
+          <option value="dragon">Deck Dragons</option>
+        </select>
+      </div>
+
+      <!-- Conteneur pour le titre du deck -->
+      <div class="deck-title-container">
+        <h1 id="deck-title"></h1>
+      </div>
+
+      <!-- Conteneur pour la galerie CSS -->
+      <div id="pokemon-gallery">
+        <div class="pokemon-card">1</div>
+        <div class="pokemon-card">2</div>
+        <div class="pokemon-card">3</div>
+      </div>
+
+      <!-- Conteneur pour la galerie JS -->
+      <div id="jsgallery-container">
+        <div class="jscard-item">1</div>
+        <div class="jscard-item">2</div>
+        <div class="jscard-item">3</div>
+      </div>
+    </main>
+  </body>
+</html>

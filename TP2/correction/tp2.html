@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <title>LIFWEB TP2 - DOM</title>
+    <script defer src="tp2_demo_2.js"></script>
+    <script defer src="tp2.js"></script>
+    <script src="tp2_demo_1.js"></script>
+    <link rel="stylesheet" href="tp2.css" />
+  </head>
+  <body>
+    <h1>LIFWEB TP2 - DOM</h1>
+
+    <section>
+      <h2>Exercice 0 : préparation</h2>
+
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JS sur MDN</a></li>
+        <li><a href="https://javascript.info/">javascript.info</a></li>
+      </ul>
+
+      <script>
+        "use strict";
+        console.info(`Le script inline s'exécute...`);
+        console.debug(document.querySelectorAll("a"));
+        console.info(`...le script inline a terminé.`);
+      </script>
+    </section>
+
+    <section>
+      <h2>Exercice 1 : événements</h2>
+
+      <button id="decrementBtn">-</button>
+      <span id="counter">0</span>
+      <button id="incrementBtn">+</button>
+    </section>
+
+    <section>
+      <h2>Exercice 2 : toggling de classe CSS</h2>
+      <label for="emailInput">Enter your example.com email:</label>
+      <input type="email" id="emailInput" pattern=".+@example\.com" size="30" required />
+      <button id="validate-btn">Valider</button>
+      <p id="errorMessage"></p>
+    </section>
+
+    <section>
+      <h2>Exercice 3 : affichage d'images</h2>
+      <ul id="images-list">
+        <li>
+          <a href="https://live.staticflickr.com/3907/15289585366_40fc335ee7_k_d.jpg"
+            >Herbier de l'Université Lyon 1</a
+          >
+          par <a href="https://flic.kr/p/pi683N">Franck Grenier</a> CC BY-NC 2.0
+        </li>
+        <li>
+          <a href="https://live.staticflickr.com/3885/15312381302_a82efe87cb_k_d.jpg"
+            >Archives de l'Université Lyon 1</a
+          >
+          par <a href="https://flic.kr/p/pk6Xub">Franck Grenier</a> CC BY-NC 2.0
+        </li>
+        <li>
+          <a href="https://live.staticflickr.com/4303/36156846605_246c7ecd54_o_d.jpg"
+            >BU de La Doua</a
+          >
+          par <a href="https://flic.kr/p/X64hNZ">Nicolas Nova</a> CC BY-NC 2.0
+        </li>
+      </ul>
+      <div id="image-container"></div>
+    </section>
+
+    <section>
+      <h2>Exercice 4 : Terrain de jeu et keyevent listeners</h2>
+      <div id="game-grid"></div>
+    </section>
+
+    <section>
+      <h2>Exercice 5 : Suivi de souris</h2>
+
+      <button id="mouse-btn">Follow mouse</button>
+    </section>
+
+    <section>
+      <h2>Exercice 6 : Tableau triable</h2>
+      <table id="the-table">
+        <thead>
+          <tr>
+            <th data-type="string">Pokemon Name</th>
+            <th data-type="number">Experience</th>
+            <th data-type="date">Capture Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pikachu</td>
+            <td>35</td>
+            <td>2024-01-15 09:22</td>
+          </tr>
+          <tr>
+            <td>Charmander</td>
+            <td>62</td>
+            <td>2024-01-10 14:45</td>
+          </tr>
+          <tr>
+            <td>Squirtle</td>
+            <td>45</td>
+            <td>2024-01-12 11:37</td>
+          </tr>
+          <tr>
+            <td>Bulbasaur</td>
+            <td>64</td>
+            <td>2024-01-08 16:03</td>
+          </tr>
+          <tr>
+            <td>Eevee</td>
+            <td>65</td>
+            <td>2024-01-18 08:56</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Exercice 1 bis -->
+    <section>
+      <h2>Exercice 1bis</h2>
+      <p>TODO</p>
+      <div>
+        <button id="decrementBtnBis" name="decrement">-</button>
+        <span id="counterBis">0</span>
+        <button id="incrementBtnBis" name="increment">+</button>
+      </div>
+      <div>
+        <label for="history">History</label>
+        <button id="undo-btn" name="undo">undo</button>
+        <button id="redo-btn" name="redo">redo</button>
+        <select name="history" id="history-list">
+          <option value="0">--Action History--</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Exercice 2 bis -->
+    <section>
+      <h2>Exercice 2bis : validation html</h2>
+      <div>
+        <label for="emailInput">Enter your example.com email:</label>
+        <input type="email" id="emailInput" pattern=".+@example\.com" size="30" required />
+        <button id="validate-btn">Valider</button>
+      </div>
+      <p id="errorMessage">TODO</p>
+    </section>
+
+    <!-- Exercice 4 bis -->
+    <section>
+      <h2>Exercice 4bis</h2>
+      <p>TODO</p>
+    </section>
+  </body>
+</html>

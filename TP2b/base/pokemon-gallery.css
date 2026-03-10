@@ -1,0 +1,45 @@
+/* Styles de base */
+body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 10px;
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  color: #444;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+h3 {
+  line-height: 1;
+  margin: 0.5em 0em;
+}
+
+/* === Partie 2: Ajoutez votre CSS ici === */
+/* TODO: Utilisez flexbox pour centrer le titre du deck */
+.deck-title-container {
+  height: 3em;
+  /* Votre code CSS ici */
+}
+
+/* Styles pour la galerie */
+.pokemon-gallery {
+  margin-top: 20px;
+  /* Completer avec la flexbox */
+}
+
+.pokemon-card {
+  /* Completer avec la flexbox */
+  border: 1px solid #ccc;
+  padding: 5px;
+  height: 300px;
+  text-align: center;
+}
+
+.pokemon-card img {
+  width: 100%; /* Force à ce que l'image "rentre" dans la card et soit bien retaillée*/
+}

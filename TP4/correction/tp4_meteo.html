@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP4 Météo</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="stylesheet" href="tp4_meteo.css" />
+    <script defer src="tp4_meteo_exo5.js"></script>
+  </head>
+  <body>
+    <h1>TP4 Météo</h1>
+
+    <h2>1. Météo à Olso</h2>
+    <div id="meteo-oslo" class="meteo">
+      <h3>
+        <span class="ville">Oslo</span> <span class="coord">lat:59.8939243, lon:10.6203135</span>
+      </h3>
+      <div>
+        <span class="temperature"></span>
+        <object class="meteo-icon" type="image/svg+xml"></object>
+      </div>
+    </div>
+
+    <h2>2. Météo à Lyon</h2>
+    <div id="meteo-lyon" class="meteo">
+      <h3><span class="ville"></span> <span class="coord"></span></h3>
+      <div>
+        <span class="temperature"></span>
+        <object class="meteo-icon" type="image/svg+xml"></object>
+      </div>
+    </div>
+
+    <h2>3. Tableau de bord Météo</h2>
+    <div id="meteo-dashboard"></div>
+
+    <template id="meteo-card-template">
+      <div class="meteo">
+        <h3>
+          <span class="ville"></span>
+          <span class="coord"></span>
+        </h3>
+        <div>
+          <span class="temperature"></span>
+          <object class="meteo-icon" type="image/svg+xml"></object>
+        </div>
+      </div>
+    </template>
+
+    <h2>6. Météo au choix</h2>
+    <div id="meteo-autocomplete">
+      <label for="choix-ville">Choisir une ville:</label>
+      <input list="liste-villes" id="choix-ville" name="choix-ville" />
+      <datalist id="liste-villes">
+        <!-- Options à remplir en javascript -->
+      </datalist>
+    </div>
+  </body>
+</html>

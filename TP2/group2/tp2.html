@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <title>LIFWEB TP2 - DOM</title>
+    <link rel="stylesheet" href="tp2.css" />
+    <script defer src="tp2.js"></script>
+  </head>
+  <body>
+    <h1>LIFWEB TP2 - DOM</h1>
+
+    <section class="section1">
+      <h2>Exercice 0 : préparation</h2>
+
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JS sur MDN</a></li>
+        <li><a href="https://javascript.info/">javascript.info</a></li>
+      </ul>
+
+    </section>
+
+    <section>
+      <h2>Exercice 1 : événements</h2>
+
+      <div>
+        <button id="decrementBtn">-</button>
+        <span id="counter">0</span>
+        <button id="incrementBtn">+</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercice 2 : toggling de classe CSS</h2>
+      <label for="emailInput">Enter your example.com email:</label>
+      <input id="emailInput" size="30" type="email" />
+      <button id="validate-btn">Valider</button>
+      <p id="errorMessage"></p>
+    </section>
+
+    <section>
+      <h2>Exercice 3 : affichage d'images</h2>
+      <ul id="images-list">
+        <li>
+          <a href="https://live.staticflickr.com/3907/15289585366_40fc335ee7_k_d.jpg">
+            Herbier de l'Université Lyon 1
+          </a>
+          par <a href="https://flic.kr/p/pi683N">Franck Grenier</a> CC BY-NC 2.0
+        </li>
+        <li>
+          <a href="https://live.staticflickr.com/3885/15312381302_a82efe87cb_k_d.jpg">
+            Archives de l'Université Lyon 1
+          </a>
+          par <a href="https://flic.kr/p/pk6Xub">Franck Grenier</a> CC BY-NC 2.0
+        </li>
+        <li>
+          <a href="https://live.staticflickr.com/4303/36156846605_246c7ecd54_o_d.jpg">
+            BU de La Doua
+          </a>
+          par <a href="https://flic.kr/p/X64hNZ">Nicolas Nova</a> CC BY-NC 2.0
+        </li>
+      </ul>
+      <div id="image-container"></div>
+    </section>
+
+    <section>
+      <h2>Exercice 4 : Terrain de jeu et keyevent listeners</h2>
+      <div id="game-grid"></div>
+    </section>
+    <section>
+      <h2>Exercice 5 : Suivi de souris</h2>
+
+      <button id="mouse-btn">Follow mouse</button>
+      <div class="dot"></div>
+    </section>
+
+    <section>
+      <h2>Exercice 6 : Tableau triable</h2>
+      <table id="the-table">
+        <thead>
+          <tr>
+            <th data-type="string">Pokemon Name</th>
+            <th data-type="number">Experience</th>
+            <th data-type="date">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pikachu</td>
+            <td>35</td>
+            <td>2021-01-01</td>
+          </tr>
+          <tr>
+            <td>Charmander</td>
+            <td>62</td>
+            <td>2022-01-01</td>
+          </tr>
+          <tr>
+            <td>Squirtle</td>
+            <td>45</td>
+            <td>2023-01-01</td>
+          </tr>
+          <tr>
+            <td>Bulbasaur</td>
+            <td>64</td>
+            <td>2024-01-01</td>
+          </tr>
+          <tr>
+            <td>Eevee</td>
+            <td>65</td>
+            <td>2025-01-01</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
+

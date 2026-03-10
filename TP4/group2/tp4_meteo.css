@@ -1,0 +1,45 @@
+/* Styles de base */
+body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 10px;
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  color: #444;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+h3 {
+  line-height: 1;
+  margin: 0.5em 0em;
+}
+
+.meteo {
+  font: smaller;
+  margin-left: 1.5em;
+  flex: 1 1 30%;
+}
+
+.coord {
+  font-size: x-small;
+  color: lightslategrey;
+}
+
+.temperature:after {
+  content: "°";
+}
+
+.meteo-icon {
+  height: 2em;
+  vertical-align: middle;
+}
+
+#meteo-dashboard {
+  display: flex;
+  flex-wrap: wrap;
+}
