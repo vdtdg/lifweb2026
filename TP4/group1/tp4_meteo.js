@@ -41,3 +41,22 @@ fetch(osloUrl)
 
 // Exercice 2
 
+async function getGeoCoordinates(address) {
+  const result = await fetch(`https://data.geopf.fr/geocodage/search?&q=${address}`)
+  const apiResponse = await result.json()
+  const coord = apiResponse.features[0].geometry.coordinates
+  return { "lon": coord[0], "lat": coord[1] }
+}
+
+async function getTemperatureForCoord(coord) {
+  const meteoUrl = `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${coord.lat}&lon=${coord.lon}`;
+  const meteoCallResponse = await fetch(meteoUrl)
+  const meteoLyon = await meteoCallResponse.json()
+  return meteoLyon.properties.timeseries[0].data.instant.details.air_temperature
+}
+
+(async function () {
+  const lyonCoord = await getGeoCoordinates("Lyon")
+  const lyonCurrentTemp = await getTemperatureForCoord(lyonCoord)
+  console.log(lyonCurrentTemp)
+})();
