@@ -41,5 +41,6 @@ h3 {
 
 #meteo-dashboard {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
